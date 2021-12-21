@@ -59,7 +59,7 @@ d3.json(url).then(function(data){
             weight: .5,
             color: 'black',
             fillColor: color,
-            radius: 15000 * quake.properties.mag
+            radius: 1000 * quake.properties.mag
         }).bindPopup("<h4>Date and Time: " + quake_date + "</h4><h4>Magnitude: " + quake.properties.mag + "</h4><h4>Location: " + quake.properties.place + "</h4><h4>Depth: " + quake_depth + "</h4>").addTo(map)
     }
 
